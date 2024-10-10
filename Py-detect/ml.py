@@ -1,3 +1,7 @@
+# Copyright (c) 2022 guluC
+# QQ：2509621566
+
+
 # 导入需要的库
 import os
 import sys
@@ -24,7 +28,7 @@ from utils.torch_utils import select_device, time_sync
 # 导入letterbox
 from utils.augmentations import Albumentations, augment_hsv, copy_paste, letterbox, mixup, random_perspective
 
-weights = ROOT / 'weights/best.pt'  # 权重文件地址   .pt文件
+weights = ROOT / 'weights/best1.pt'  # 权重文件地址   .pt文件
 source = ROOT / 'img'  # 测试数据文件(图片或视频)的保存路径
 data = ROOT / 'ANNOTATIONS/'  # 标签文件地址   .yaml文件
 
@@ -128,5 +132,5 @@ if __name__ == '__main__':
     # 传入一张图片
     data = detect(img)
     # {'class': 'crazing', 'conf': 0.31800347566604614, 'position': [91, 22, 108, 154]}
-
+    print(data)
     print(type(data))

@@ -10,11 +10,7 @@ import (
 
 func main() {
 	router := routers.InitRouter()
-	//router.GET("/test", func(c *gin.Context) {
-	//	c.JSON(200, gin.H{
-	//		"message": "test",
-	//	})
-	//})
+
 	s := &http.Server{
 		Addr:           fmt.Sprintf(":%d", setting.HTTPPort),
 		Handler:        router,

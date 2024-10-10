@@ -3,6 +3,10 @@ testdata_dir = "testdata"
 tmp_dir = "tmp"
 
 [build]
+
+  cmd = "go build -o ./tmp/main ."
+  bin = "./tmp/main"
+  envs = ["LANG=en_US.UTF-8", "LC_ALL=en_US.UTF-8"]
   args_bin = []
   bin = "tmp\\main.exe"
   cmd = "go build -o ./tmp/main.exe ."

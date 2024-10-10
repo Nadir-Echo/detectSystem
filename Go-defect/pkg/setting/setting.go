@@ -30,9 +30,10 @@ var (
 
 func init() {
 	var err error
-	path :="E:\\Golang\\Final\\Demo\\conf\\app.ini"
-	// path := "conf/app.ini"
+	// path :="E:\\Golang\\Final\\Demo\\conf\\app.ini"
+	path := "./conf/app.ini"
 
+	// fmt.Println("路径是",path)
 	Cfg, err = ini.Load(path)
 	if err != nil {
 		log.Fatalf("Fail to parse 'conf/app.ini': %v", err)
