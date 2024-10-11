@@ -1,0 +1,21 @@
+package e
+
+const (
+	// 成功响应
+	SUCCESS = 200
+	// 服务器内部错误
+	ERROR = 500
+	// 客户端请求的语法错误，服务器无法理解
+	INVALID_PARAMS = 400
+
+	ERROR_AUTH_CHECK_TOKEN_FAIL    = 20001
+	ERROR_AUTH_CHECK_TOKEN_TIMEOUT = 20002
+	ERROR_AUTH_TOKEN               = 20003
+	ERROR_AUTH                     = 20004
+
+	ERROR_PARSE_GET_ROLE       = 50008
+	ERROR_AUTH_CHECK_ROLE_FAIL = 50009
+	ERROR_AUTH_PARSE           = 50010
+	ERROR_ADD_USER			 = 50011
+	ERROR_USER_EXIST		 = 50012
+)
